@@ -1,3 +1,6 @@
+package Tests;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,7 +33,8 @@ public class TestLogin
         
     }
 
-    @AfterSuite
+    @AfterMethod
+	@AfterSuite
     void tearDown()
     {
         try {

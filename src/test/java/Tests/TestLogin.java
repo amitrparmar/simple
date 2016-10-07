@@ -50,6 +50,7 @@ public class TestLogin
     {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login();
+        
     }
 
 }
